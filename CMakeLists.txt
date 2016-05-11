@@ -25,7 +25,7 @@ INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include)
 INCLUDE("Sources.cmake")
 
 # ----- Add library target -----
-ADD_LIBRARY(gp ${LIBGP_SRC} ${LIBGP_INTERFACES})
+ADD_LIBRARY(gp SHARED ${LIBGP_SRC} ${LIBGP_INTERFACES})
 
 # ----- Generate PKgconfig file ----
 get_property(LIB64 GLOBAL PROPERTY FIND_LIBRARY_USE_LIB64_PATHS)

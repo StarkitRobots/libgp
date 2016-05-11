@@ -3,7 +3,7 @@
     "deps": ["rhobandeps/eigen"],
     "includes": ["include"],
     "libraries": "build",
-    "links": "build/libgp.a",
+    "links": "build/libgp.so",
     "build": [
         "mkdir -p build",
         "cd build",
