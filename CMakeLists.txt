@@ -5,6 +5,10 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
 PROJECT(libgp CXX C)
 
+#Deps depencencies
+find_package(Deps)
+deps_add_libraries()
+
 # if no option is given, standard is release
 IF(NOT CMAKE_CONFIGURATION_TYPES AND NOT CMAKE_BUILD_TYPE)
    SET(CMAKE_BUILD_TYPE Release)

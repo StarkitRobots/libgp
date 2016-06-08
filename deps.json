@@ -2,7 +2,6 @@
     "name": "rhobandeps/libgp",
     "deps": ["rhobandeps/eigen"],
     "includes": ["include"],
-    "libraries": "build",
     "links": "build/libgp.so",
     "build": [
         "mkdir -p build",
