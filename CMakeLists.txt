@@ -5,9 +5,15 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
 PROJECT(libgp CXX C)
 
-#Deps depencencies
-find_package(Deps)
-deps_add_libraries()
+find_package(catkin REQUIRED COMPONENTS
+  Eigen
+  )
+
+catkin_package(
+  INCLUDE_DIRS include
+  LIBRARIES RhAL
+  CATKIN_DEPENDS Eigen
+)
 
 # if no option is given, standard is release
 IF(NOT CMAKE_CONFIGURATION_TYPES AND NOT CMAKE_BUILD_TYPE)
