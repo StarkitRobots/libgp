@@ -26,7 +26,7 @@ OPTION(BUILD_LIBGP_EXAMPLES "Build examples" OFF)
 SET(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_MODULE_PATH})
 
 # ----- Add include directories -----
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include)
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include ${catkin_INCLUDE_DIRS})
 
 # ----- Add sources -----
 INCLUDE("Sources.cmake")
