@@ -6,13 +6,13 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 PROJECT(libgp CXX C)
 
 find_package(catkin REQUIRED COMPONENTS
-  Eigen
+  eigen
   )
 
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES gp
-  CATKIN_DEPENDS Eigen
+  CATKIN_DEPENDS eigen
 )
 
 # if no option is given, standard is release
