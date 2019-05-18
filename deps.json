@@ -1,6 +1,6 @@
 {
-    "name": "rhobandeps/libgp",
-    "deps": ["rhobandeps/eigen"],
+    "name": "StarkitRobots/libgp",
+    "deps": ["StarkitRobots/eigen"],
     "includes": ["include"],
     "links": "build/libgp.so",
     "build": [
